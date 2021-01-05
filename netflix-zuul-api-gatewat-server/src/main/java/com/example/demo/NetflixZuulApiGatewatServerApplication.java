@@ -1,15 +1,17 @@
-package com.example.exchangeservice;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ExchangeServiceApplication {
+@EnableZuulProxy
+public class NetflixZuulApiGatewatServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExchangeServiceApplication.class, args);
+		SpringApplication.run(NetflixZuulApiGatewatServerApplication.class, args);
 	}
 
 }
